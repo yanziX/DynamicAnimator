@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  DynamicAnimator
+//
+//  Created by storm on 2017/5/24.
+//  Copyright © 2017年 strom. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+
+#define kPictureW 750.0 //设计图纸的宽
+#define kPictureH 1334.0 //设计图纸的高
+#define kDistanceHeightRatio(r) r*SCREEN_HEIGHT/kPictureH
+#define kDistanceWidthRatio(r) r*SCREEN_WIDTH/kPictureW
+
+
+#define k16RGBColor(rgbValue) \
+[UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16)) / 255.0
+
+
+#endif /* PrefixHeader_pch */
